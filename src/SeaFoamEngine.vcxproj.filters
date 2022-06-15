@@ -1,0 +1,884 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SeaFoamEngineCode\ModelManager.cpp">
+      <Filter>Application\SeaFoam Engine\Asset Management\Model Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\ShaderManager.cpp">
+      <Filter>Application\SeaFoam Engine\Asset Management\Shader Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\TextureManager.cpp">
+      <Filter>Application\SeaFoam Engine\Asset Management\Texture Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CameraManager.cpp">
+      <Filter>Application\SeaFoam Engine\Camera Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Alarmable.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\AlarmableManager.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Alarmable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\AlarmDeregistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Alarm Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\AlarmRegistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Alarm Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\DrawDeregistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Draw Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\DrawRegistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Draw Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\UpdateDeregistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Update Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\UpdateRegistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Update Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SceneRegistrationBroker.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Drawable.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\DrawableManager.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Drawable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Updatable.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Updatable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\UpdatableManager.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Updatable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\GameObject.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Scene.cpp">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SceneManager.cpp">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\main.cpp">
+      <Filter>Application\SeaFoam Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SeaFoamEngine.cpp">
+      <Filter>Application\SeaFoam Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineResources\GameEnd.cpp">
+      <Filter>Application\SeaFoam Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineResources\GameInitialize.cpp">
+      <Filter>Application\SeaFoam Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineResources\LoadResources.cpp">
+      <Filter>Application\SeaFoam Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\KeyStateTest.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable\KeyState</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Inputable.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\KeyBoardEventManager.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SingleKeyEventManager.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\InputRegistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Input Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\InputDeregistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Input Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\GameObjectRegistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\GameObject Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\GameObjectDeregistrationCommand.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\GameObject Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\TimeManager.cpp">
+      <Filter>Application\SeaFoam Engine\Time Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\FreezeTime.cpp">
+      <Filter>Application\SeaFoam Engine\Time Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SceneChangeCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Scene\Scene Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Collidable.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Collidable</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionManager.cpp">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionGroup.cpp">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionRegistrationCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Collide Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionDeregistrationCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Collide Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionTestPairCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionTestSelfCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionDispatch.cpp">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeBSphere.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\Visualizer.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\GodCam.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SeaFoamSprite.cpp">
+      <Filter>Application\SeaFoam Engine\Asset Management\Sprite Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\ImageManager.cpp">
+      <Filter>Application\SeaFoam Engine\Asset Management\Sprite Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\DemoGameSceneOne.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\WorldPlane.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\TreeObj.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\SceneDemo.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\Frigate.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\GroundPlane.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Ground</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\PlayerCamera.cpp">
+      <Filter>Application\UserCode\DEMO GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\PlayerTank.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Tank</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\Bullet.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\BulletFactory.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\BulletPool.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeAABB.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\HUDTest.cpp">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\TesterObject.cpp">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\TesterScene.cpp">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\BaseEnemy.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeOBB.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\SFMathTools.cpp">
+      <Filter>Application\SeaFoam Engine\Namespaces</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\BlankFrigate.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\VisualizerCmd.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization\Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="SeaFoamEngineCode\VisualizerManager.cpp">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization\Cmds</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\TerrainTest.cpp">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\Wave.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Enemies\Waves</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\FastEnemy.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\FlyingEnemy.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\ScoreManager.cpp">
+      <Filter>Application\UserCode\DEMO GAME</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\DemoGameStart.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Scenes\Start Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\StartGame.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Scenes\Start Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="User Code\LifeBar.cpp">
+      <Filter>Application\UserCode\DEMO GAME\Tank</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="_Libs">
+      <UniqueIdentifier>{1392bc0c-ded2-42a7-9ec1-333be4dadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{aef3393e-06a5-4f08-bf4a-3b6be12d1e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW">
+      <UniqueIdentifier>{d22a518f-dd11-48ea-8247-bd82c5928233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\include">
+      <UniqueIdentifier>{f1613e77-99f1-482b-bccf-12b6784f3aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\GLFW\lib">
+      <UniqueIdentifier>{c350b52d-8efa-4eca-a258-d57d45c43245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6">
+      <UniqueIdentifier>{189a2178-2765-49df-b052-8eca24a60d61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\lib">
+      <UniqueIdentifier>{841af908-0674-4949-8aa0-292e3e84a88b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\SB6\include">
+      <UniqueIdentifier>{d2f5d78b-d9cf-4bd9-bd4e-df7522de593c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File">
+      <UniqueIdentifier>{fb44cdb2-f236-4b3b-833e-e9e2c3af59cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\lib">
+      <UniqueIdentifier>{23abe339-ce80-4523-b0f0-23747e3f512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\File\include">
+      <UniqueIdentifier>{323b20aa-e08c-4260-84b1-1e85121a9e17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math">
+      <UniqueIdentifier>{9fcc2c9b-3e4f-4ab2-a0c5-3099cdf90300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\lib">
+      <UniqueIdentifier>{ea7cbe8f-1aeb-4ad2-bd4e-fa300408bd5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\Math\include">
+      <UniqueIdentifier>{5d126765-1977-4213-89fb-e004f6468da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore">
+      <UniqueIdentifier>{d3f91089-c7e6-474d-8376-afd372d35a8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\lib">
+      <UniqueIdentifier>{8a854cfc-9294-4797-b476-0b2feacdd62f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Libs\AzulCore\include">
+      <UniqueIdentifier>{60eabb98-a714-4df4-8fa1-3fb92ea55bd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode">
+      <UniqueIdentifier>{ddefadc3-3ad7-4bfc-b9ea-681ee91328e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine">
+      <UniqueIdentifier>{100595f9-08b7-467d-a275-c5712b33b13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Resources">
+      <UniqueIdentifier>{01ca4adc-1a24-46c2-8cff-b45081eee673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Camera Manager">
+      <UniqueIdentifier>{05d1d2a5-cce7-4e51-ad4e-4f2ee7e4815b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object">
+      <UniqueIdentifier>{eac6d7d2-84c8-4bc4-8af5-9acb00baf82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Scene">
+      <UniqueIdentifier>{288ca9ca-4aea-4465-bc0a-b32d1a765a22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Drawable">
+      <UniqueIdentifier>{cd02d8cf-4e19-4618-881b-8fa6d42575b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Updatable">
+      <UniqueIdentifier>{5a2ca3a3-005b-4d49-80fd-2514ab650cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands">
+      <UniqueIdentifier>{02fd43a6-70ab-48fa-bc15-96582f8ded45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\Update Cmds">
+      <UniqueIdentifier>{9fb2d465-d326-48d1-bed0-1c5bb0f2ff8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\Draw Cmds">
+      <UniqueIdentifier>{d3f3d5f1-2d3a-4eb6-bfd8-5ba2ae65349f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Alarmable">
+      <UniqueIdentifier>{93159722-7df4-4014-a878-4f21fe00d80a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\Alarm Cmds">
+      <UniqueIdentifier>{af29b018-358e-4327-aa65-6533555954da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Inputable">
+      <UniqueIdentifier>{a582b3c6-0ee8-4599-b3e0-f06632c2173a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Inputable\KeyState">
+      <UniqueIdentifier>{803898a3-e930-49e6-b1cf-38734ed80cbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\Input Cmds">
+      <UniqueIdentifier>{7cfc8934-862a-409c-b703-4e70669710f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\GameObject Cmds">
+      <UniqueIdentifier>{aa91dafc-4b76-470d-a34d-dd999f5600e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Time Manager">
+      <UniqueIdentifier>{3c53a45e-cb0d-430e-8df2-1916aa66631f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Scene\Scene Cmds">
+      <UniqueIdentifier>{81487776-79d1-4dfb-abe7-94b87fe4fc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Collision">
+      <UniqueIdentifier>{b05422b3-280d-4014-98b6-7eee43f6bb1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Collidable">
+      <UniqueIdentifier>{78e40760-55cd-4933-839d-d7a399f31908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Game Object\Commands\Collide Cmds">
+      <UniqueIdentifier>{866415e1-7e8b-4275-a440-64de32c197f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Collision\Tests">
+      <UniqueIdentifier>{02645dcf-5469-4ca4-88cc-e7a37bed4cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Collision\Model/Visualization">
+      <UniqueIdentifier>{2f5998b9-c29c-455f-ae9d-08f392e6b7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Testing">
+      <UniqueIdentifier>{de928677-3cb6-4b3c-9e20-4d3566fcc073}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME">
+      <UniqueIdentifier>{075f609d-120f-4d51-925d-39afeadc7c61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Scenes">
+      <UniqueIdentifier>{c2b1d401-4c28-444a-aebf-412b10bcaa4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Ground">
+      <UniqueIdentifier>{f7ca793f-7559-474e-b243-888d4162f336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Tank">
+      <UniqueIdentifier>{4b0c88f5-a87e-45f9-abb1-bd0a334fa943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Tank\Bullet">
+      <UniqueIdentifier>{9acc152d-df8a-449c-b664-ef6de6f74e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Namespaces">
+      <UniqueIdentifier>{3f668499-8bf0-4494-87a9-2e29d4ee51bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\Testing\Test test">
+      <UniqueIdentifier>{4b13461b-151d-4714-a7f3-b0afe391a8ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Enemies">
+      <UniqueIdentifier>{bcd00642-abf7-4799-8551-1f66e356a009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Asset Management">
+      <UniqueIdentifier>{e3e0b907-1028-43d6-a6da-f1e400654cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Asset Management\Model Manager">
+      <UniqueIdentifier>{eadeaf13-a000-4bd7-88ef-cb5c6c1f7be6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Asset Management\Texture Manager">
+      <UniqueIdentifier>{de13e993-3d02-4f59-9768-bf99a69825af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Asset Management\Shader Manager">
+      <UniqueIdentifier>{39ba2ebf-b253-4791-bf8f-eed61b7776f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Asset Management\Sprite Manager">
+      <UniqueIdentifier>{d89586c3-336f-4526-87f9-9180b62aea56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\SeaFoam Engine\Collision\Model/Visualization\Cmds">
+      <UniqueIdentifier>{5a247d90-eb4e-4539-ad4a-8be08134a379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Enemies\Waves">
+      <UniqueIdentifier>{e9afea42-b004-4c6e-999b-4e3062f0898c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application\UserCode\DEMO GAME\Scenes\Start Screen">
+      <UniqueIdentifier>{7c104604-0681-47e3-b0a2-42c437653bbc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h">
+      <Filter>_Libs\GLFW\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\arcball.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\object.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\shader.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\vmath.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h">
+      <Filter>_Libs\SB6\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\File\include\File.h">
+      <Filter>_Libs\File\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Align16.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Constants.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Enum.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathEngine.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Matrix.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Util.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Vect.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Image.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Model.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h">
+      <Filter>_Libs\AzulCore\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\MathApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\Quat.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\QuatApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dist\Math\include\VectApp.h">
+      <Filter>_Libs\Math\include</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ModelManager.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Model Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ShaderManager.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Shader Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\TextureManager.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Texture Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CameraManager.h">
+      <Filter>Application\SeaFoam Engine\Camera Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Alarmable.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\AlarmableManager.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\AlarmDeregistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Alarm Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\AlarmRegistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Alarm Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\DrawDeregistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Draw Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\DrawRegistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Draw Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\UpdateDeregistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Update Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\UpdateRegistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Update Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CommandBase.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneRegistrationBroker.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Drawable.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\DrawableManager.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Updatable.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Updatable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\UpdatableManager.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Updatable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\GameObject.h">
+      <Filter>Application\SeaFoam Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Scene.h">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneManager.h">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamEngine.h">
+      <Filter>Application\SeaFoam Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ModelMangerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Model Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ShaderManagerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Shader Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\TextureManagerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Texture Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneManagerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\UpdatableAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Updatable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\DrawableAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\AlarmableAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Alarmable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\KeyStateTest.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable\KeyState</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Inputable.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\KeyBoardEventManager.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SingleKeyEventManager.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\InputRegistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Input Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\InputDeregistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Input Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\GameObjectRegistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\GameObject Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\GameObjectDeregistrationCommand.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\GameObject Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneAttorney.h">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\TimeManager.h">
+      <Filter>Application\SeaFoam Engine\Time Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\TimeManagerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Time Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\FreezeTime.h">
+      <Filter>Application\SeaFoam Engine\Time Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamEngineAttorney.h">
+      <Filter>Application\SeaFoam Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneNull.h">
+      <Filter>Application\SeaFoam Engine\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeNullCmd.h">
+      <Filter>Application\SeaFoam Engine\Scene\Scene Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeCmd.h">
+      <Filter>Application\SeaFoam Engine\Scene\Scene Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeCmdBase.h">
+      <Filter>Application\SeaFoam Engine\Scene\Scene Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionManager.h">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Collidable.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionGroup.h">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionRegistrationCmd.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Collide Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionDeregistrationCmd.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Commands\Collide Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollidableAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Collidable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestCmdBase.h">
+      <Filter>Application\SeaFoam Engine\Collision\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestPairCmd.h">
+      <Filter>Application\SeaFoam Engine\Collision\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestSelfCmd.h">
+      <Filter>Application\SeaFoam Engine\Collision\Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionDispatch.h">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionDispatchBase.h">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolume.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeBSphere.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\Visualizer.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\VisualizerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\GodCam.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamSprite.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Sprite Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ImageManager.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Sprite Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\ImageManagerAttorney.h">
+      <Filter>Application\SeaFoam Engine\Asset Management\Sprite Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\WorldPlane.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\TreeObj.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\SceneDemo.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\Frigate.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\DemoGameSceneOne.h">
+      <Filter>Application\UserCode\DEMO GAME\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\GroundPlane.h">
+      <Filter>Application\UserCode\DEMO GAME\Ground</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\PlayerCamera.h">
+      <Filter>Application\UserCode\DEMO GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\PlayerTank.h">
+      <Filter>Application\UserCode\DEMO GAME\Tank</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\Bullet.h">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\BulletFactory.h">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\BulletPool.h">
+      <Filter>Application\UserCode\DEMO GAME\Tank\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\SFMathTools.h">
+      <Filter>Application\SeaFoam Engine\Namespaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\RegistrationStates.h">
+      <Filter>Application\SeaFoam Engine\Namespaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\GameObjectAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\InputableAttorney.h">
+      <Filter>Application\SeaFoam Engine\Game Object\Inputable</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeAABB.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\HUDTest.h">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\TesterObject.h">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\TesterScene.h">
+      <Filter>Application\UserCode\Testing\Test test</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\BaseEnemy.h">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeOBB.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\BlankFrigate.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\VisualizerCmd.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization\Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\VisualizerManager.h">
+      <Filter>Application\SeaFoam Engine\Collision\Model/Visualization\Cmds</Filter>
+    </ClInclude>
+    <ClInclude Include="SeaFoamEngineCode\CollisionGroupAttorney.h">
+      <Filter>Application\SeaFoam Engine\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\TerrainTest.h">
+      <Filter>Application\UserCode\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\Wave.h">
+      <Filter>Application\UserCode\DEMO GAME\Enemies\Waves</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\FastEnemy.h">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\FlyingEnemy.h">
+      <Filter>Application\UserCode\DEMO GAME\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\ScoreManager.h">
+      <Filter>Application\UserCode\DEMO GAME</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\DemoGameStart.h">
+      <Filter>Application\UserCode\DEMO GAME\Scenes\Start Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\StartGame.h">
+      <Filter>Application\UserCode\DEMO GAME\Scenes\Start Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="User Code\LifeBar.h">
+      <Filter>Application\UserCode\DEMO GAME\Tank</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib">
+      <Filter>_Libs\GLFW\lib</Filter>
+    </Library>
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib">
+      <Filter>_Libs\SB6\lib</Filter>
+    </Library>
+    <Library Include="..\dist\File\lib\File_Debug.lib">
+      <Filter>_Libs\File\lib</Filter>
+    </Library>
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib">
+      <Filter>_Libs\Math\lib</Filter>
+    </Library>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib">
+      <Filter>_Libs\AzulCore\lib</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

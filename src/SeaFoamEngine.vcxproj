@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3167A812-5D2C-4EE9-ACFD-F0E959384755}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>spinnycube</RootNamespace>
+    <ProjectName>SeaFoamEngine</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <TargetName>$(ProjectName)_Debug</TargetName>
+    <OutDir>$(ProjectDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+    <EnableManagedIncrementalBuild>true</EnableManagedIncrementalBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)extern\glfw-2.7.6\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;WINDOWS_TARGET_PLATFORM="$(TargetPlatformVersion)";MEMORY_LOGS_DIR=R"($(SolutionDir))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)dist\Math\include;$(SolutionDir)dist\SB6\include;$(SolutionDir)dist\GLFW\include;$(SolutionDir)dist\File\include;$(SolutionDir)dist\AzulCore\include;$(SolutionDir)src\SeaFoamEngineCode;$(SolutionDir)src\UserCode</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <SDLCheck>
+      </SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <UseUnicodeForAssemblerListing>false</UseUnicodeForAssemblerListing>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <ForcedIncludeFiles>$(SolutionDir)\dist\Memtracker\Framework.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>MSVCRTD.lib</IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+      <LinkStatus>
+      </LinkStatus>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="SeaFoamEngineCode\Alarmable.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\AlarmableManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\AlarmDeregistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\AlarmRegistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CameraManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Collidable.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionDeregistrationCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionDispatch.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionGroup.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionRegistrationCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionTestPairCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionTestSelfCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeAABB.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeBSphere.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\CollisionVolumeOBB.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Drawable.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\DrawableManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\DrawDeregistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\DrawRegistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\FreezeTime.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\GameObject.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\GameObjectDeregistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\GameObjectRegistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\ImageManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Inputable.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\InputDeregistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\InputRegistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\KeyBoardEventManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\KeyStateTest.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\main.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\ModelManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Scene.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SceneChangeCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SceneManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SceneRegistrationBroker.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SeaFoamEngine.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SeaFoamSprite.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SFMathTools.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\ShaderManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\SingleKeyEventManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\TextureManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\TimeManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Updatable.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\UpdatableManager.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\UpdateDeregistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\UpdateRegistrationCommand.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\Visualizer.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\VisualizerCmd.cpp" />
+    <ClCompile Include="SeaFoamEngineCode\VisualizerManager.cpp" />
+    <ClCompile Include="SeaFoamEngineResources\GameEnd.cpp" />
+    <ClCompile Include="SeaFoamEngineResources\GameInitialize.cpp" />
+    <ClCompile Include="SeaFoamEngineResources\LoadResources.cpp" />
+    <ClCompile Include="User Code\BaseEnemy.cpp" />
+    <ClCompile Include="User Code\BlankFrigate.cpp" />
+    <ClCompile Include="User Code\Bullet.cpp" />
+    <ClCompile Include="User Code\BulletFactory.cpp" />
+    <ClCompile Include="User Code\BulletPool.cpp" />
+    <ClCompile Include="User Code\DemoGameSceneOne.cpp" />
+    <ClCompile Include="User Code\DemoGameStart.cpp" />
+    <ClCompile Include="User Code\FastEnemy.cpp" />
+    <ClCompile Include="User Code\FlyingEnemy.cpp" />
+    <ClCompile Include="User Code\Frigate.cpp" />
+    <ClCompile Include="User Code\GodCam.cpp" />
+    <ClCompile Include="User Code\GroundPlane.cpp" />
+    <ClCompile Include="User Code\HUDTest.cpp" />
+    <ClCompile Include="User Code\LifeBar.cpp" />
+    <ClCompile Include="User Code\PlayerCamera.cpp" />
+    <ClCompile Include="User Code\PlayerTank.cpp" />
+    <ClCompile Include="User Code\SceneDemo.cpp" />
+    <ClCompile Include="User Code\ScoreManager.cpp" />
+    <ClCompile Include="User Code\StartGame.cpp" />
+    <ClCompile Include="User Code\TerrainTest.cpp" />
+    <ClCompile Include="User Code\TesterObject.cpp" />
+    <ClCompile Include="User Code\TesterScene.cpp" />
+    <ClCompile Include="User Code\TreeObj.cpp" />
+    <ClCompile Include="User Code\Wave.cpp" />
+    <ClCompile Include="User Code\WorldPlane.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dist\AzulCore\include\AzulCore.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulFileHdr.h" />
+    <ClInclude Include="..\dist\AzulCore\include\AzulHelper.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Camera.h" />
+    <ClInclude Include="..\dist\AzulCore\include\DebugOut.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Engine.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GpuVertTypes.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorByPosition.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTexture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_ColorNoTextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_Sprite.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_SpriteBox.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureFlat.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_TextureLight.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeAutoColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\GraphicsObject_WireframeConstantColor.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Image.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Keyboard.h" />
+    <ClInclude Include="..\dist\AzulCore\include\LibrarySetup.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Model.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Mouse.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Rect.h" />
+    <ClInclude Include="..\dist\AzulCore\include\ShaderObject.h" />
+    <ClInclude Include="..\dist\AzulCore\include\Texture.h" />
+    <ClInclude Include="..\dist\AzulCore\include\TextureTGA.h" />
+    <ClInclude Include="..\dist\File\include\File.h" />
+    <ClInclude Include="..\dist\GLFW\include\GL\glfw.h" />
+    <ClInclude Include="..\dist\Math\include\Align16.h" />
+    <ClInclude Include="..\dist\Math\include\Constants.h" />
+    <ClInclude Include="..\dist\Math\include\Enum.h" />
+    <ClInclude Include="..\dist\Math\include\MathApp.h" />
+    <ClInclude Include="..\dist\Math\include\MathEngine.h" />
+    <ClInclude Include="..\dist\Math\include\Matrix.h" />
+    <ClInclude Include="..\dist\Math\include\Quat.h" />
+    <ClInclude Include="..\dist\Math\include\QuatApp.h" />
+    <ClInclude Include="..\dist\Math\include\Util.h" />
+    <ClInclude Include="..\dist\Math\include\Vect.h" />
+    <ClInclude Include="..\dist\Math\include\VectApp.h" />
+    <ClInclude Include="..\dist\SB6\include\arcball.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\gl3w.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glcorearb.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\glxext.h" />
+    <ClInclude Include="..\dist\SB6\include\GL\wglext.h" />
+    <ClInclude Include="..\dist\SB6\include\object.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ext.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6ktx.h" />
+    <ClInclude Include="..\dist\SB6\include\sb6mfile.h" />
+    <ClInclude Include="..\dist\SB6\include\shader.h" />
+    <ClInclude Include="..\dist\SB6\include\vmath.h" />
+    <ClInclude Include="SeaFoamEngineCode\Alarmable.h" />
+    <ClInclude Include="SeaFoamEngineCode\AlarmableAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\AlarmableManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\AlarmDeregistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\AlarmRegistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\CameraManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\Collidable.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollidableAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionDeregistrationCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionDispatch.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionDispatchBase.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionGroup.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionGroupAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionRegistrationCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestCmdBase.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestPairCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionTestSelfCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolume.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeAABB.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeBSphere.h" />
+    <ClInclude Include="SeaFoamEngineCode\CollisionVolumeOBB.h" />
+    <ClInclude Include="SeaFoamEngineCode\CommandBase.h" />
+    <ClInclude Include="SeaFoamEngineCode\Drawable.h" />
+    <ClInclude Include="SeaFoamEngineCode\DrawableAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\DrawableManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\DrawDeregistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\DrawRegistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\FreezeTime.h" />
+    <ClInclude Include="SeaFoamEngineCode\GameObject.h" />
+    <ClInclude Include="SeaFoamEngineCode\GameObjectAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\GameObjectDeregistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\GameObjectRegistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\ImageManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\ImageManagerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\Inputable.h" />
+    <ClInclude Include="SeaFoamEngineCode\InputableAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\InputDeregistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\InputRegistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\KeyBoardEventManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\KeyStateTest.h" />
+    <ClInclude Include="SeaFoamEngineCode\ModelManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\ModelMangerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\RegistrationStates.h" />
+    <ClInclude Include="SeaFoamEngineCode\Scene.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeCmdBase.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneChangeNullCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneManagerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneNull.h" />
+    <ClInclude Include="SeaFoamEngineCode\SceneRegistrationBroker.h" />
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamEngine.h" />
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamEngineAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\SeaFoamSprite.h" />
+    <ClInclude Include="SeaFoamEngineCode\SFMathTools.h" />
+    <ClInclude Include="SeaFoamEngineCode\ShaderManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\ShaderManagerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\SingleKeyEventManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\TextureManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\TextureManagerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\TimeManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\TimeManagerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\Updatable.h" />
+    <ClInclude Include="SeaFoamEngineCode\UpdatableAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\UpdatableManager.h" />
+    <ClInclude Include="SeaFoamEngineCode\UpdateDeregistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\UpdateRegistrationCommand.h" />
+    <ClInclude Include="SeaFoamEngineCode\Visualizer.h" />
+    <ClInclude Include="SeaFoamEngineCode\VisualizerAttorney.h" />
+    <ClInclude Include="SeaFoamEngineCode\VisualizerCmd.h" />
+    <ClInclude Include="SeaFoamEngineCode\VisualizerManager.h" />
+    <ClInclude Include="User Code\BaseEnemy.h" />
+    <ClInclude Include="User Code\BlankFrigate.h" />
+    <ClInclude Include="User Code\Bullet.h" />
+    <ClInclude Include="User Code\BulletFactory.h" />
+    <ClInclude Include="User Code\BulletPool.h" />
+    <ClInclude Include="User Code\DemoGameSceneOne.h" />
+    <ClInclude Include="User Code\DemoGameStart.h" />
+    <ClInclude Include="User Code\FastEnemy.h" />
+    <ClInclude Include="User Code\FlyingEnemy.h" />
+    <ClInclude Include="User Code\Frigate.h" />
+    <ClInclude Include="User Code\GodCam.h" />
+    <ClInclude Include="User Code\GroundPlane.h" />
+    <ClInclude Include="User Code\HUDTest.h" />
+    <ClInclude Include="User Code\LifeBar.h" />
+    <ClInclude Include="User Code\PlayerCamera.h" />
+    <ClInclude Include="User Code\PlayerTank.h" />
+    <ClInclude Include="User Code\SceneDemo.h" />
+    <ClInclude Include="User Code\ScoreManager.h" />
+    <ClInclude Include="User Code\StartGame.h" />
+    <ClInclude Include="User Code\TerrainTest.h" />
+    <ClInclude Include="User Code\TesterObject.h" />
+    <ClInclude Include="User Code\TesterScene.h" />
+    <ClInclude Include="User Code\TreeObj.h" />
+    <ClInclude Include="User Code\Wave.h" />
+    <ClInclude Include="User Code\WorldPlane.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\dist\AzulCore\lib\AzulCore_Debug.lib" />
+    <Library Include="..\dist\File\lib\File_Debug.lib" />
+    <Library Include="..\dist\GLFW\lib\GLFW_Debug.lib" />
+    <Library Include="..\dist\Math\lib\MathEngine_Debug.lib" />
+    <Library Include="..\dist\SB6\lib\sb6_Debug.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
